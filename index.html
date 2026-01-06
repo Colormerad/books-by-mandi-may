@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mandi May - Sci-Fi Author</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Matrix Code Background -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="#" class="logo">
+                    <span class="logo-bracket">&lt;</span>Mandi May<span class="logo-bracket">/&gt;</span>
+                </a>
+                <ul class="nav-menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#books">The Code</a></li>
+                    <li><a href="#contact">Connect</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="code-grid"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="code-label">// TODO: Make this look like an accident</div>
+                    <h1 class="hero-title">When Getting Fired Gives You <span class="highlight">Admin Access</span></h1>
+                    <p class="hero-description">
+                        I write sci-fi/LitRPG about ordinary people discovering extraordinary powers.
+                        What happens when a graphic designer realizes reality is just badly written code—and she has root access?
+                        Spoiler: Nothing good for her enemies.
+                    </p>
+                    <div class="stats-row">
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="82000">0</div>
+                            <div class="stat-label">Words Written</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="1">0</div>
+                            <div class="stat-label">Book Complete</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-value" data-target="100">0</div>
+                            <div class="stat-label">% Satisfaction</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <a href="#books" class="btn btn-primary">
+                            <span class="btn-icon">▶</span> Read Awakened
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span class="btn-icon">{ }</span> Contact Me
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-dots">
+                                <span></span><span></span><span></span>
+                            </div>
+                            <div class="window-title">definitely-not-evil-plans.js</div>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="code-keyword">class</span> <span class="code-class">CorporateRevenge</span> {
+  <span class="code-keyword">constructor</span>(target) {
+    <span class="code-keyword">this</span>.target = target;
+    <span class="code-keyword">this</span>.evilPlans = <span class="code-string">"DEFINITELY NOT EVIL"</span>;
+    <span class="code-keyword">this</span>.coffeeFixed = <span class="code-boolean">true</span>;
+  }
+
+  <span class="code-function">getRevenge</span>() {
+    <span class="code-comment">// Step 1: Fix coffee maker</span>
+    Reality.hack(<span class="code-string">"coffee.quality"</span>, <span class="code-number">100</span>);
+
+    <span class="code-comment">// Step 2: Give self a raise</span>
+    <span class="code-keyword">this</span>.salary += <span class="code-number">50000</span>;
+
+    <span class="code-comment">// Step 3: Destroy enemies</span>
+    <span class="code-keyword">this</span>.target.<span class="code-function">setCareer</span>(<span class="code-string">"ruined"</span>);
+
+    <span class="code-keyword">return</span> <span class="code-string">"Mission accomplished"</span>;
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="terminal-header">
+                    <span class="terminal-prompt">$</span> cat about.txt
+                </div>
+                <h2 class="section-title">Decoding <span class="text-glow">The Author</span></h2>
+                <p class="about-text">
+                    I write sci-fi/LitRPG stories about ordinary people who discover reality has an exploit—and they're
+                    not afraid to use it. My debut novel Awakened follows Samantha, a graphic designer who gets fired,
+                    gains the ability to see the universe's source code, and decides corporate revenge is best served with
+                    a side of reality manipulation.
+                </p>
+                <p class="about-text">
+                    Think The Matrix meets Office Space, with a progression system and a protagonist who keeps detailed notes
+                    in a journal labeled "DEFINITELY NOT EVIL PLANS." Perfect for readers who like their revenge served cold,
+                    their coffee fixed with reality hacks, and their LitRPG with a side of dark humor.
+                </p>
+                <div class="skill-tags">
+                    <span class="skill-tag">[Sci-Fi]</span>
+                    <span class="skill-tag">[LitRPG Lite]</span>
+                    <span class="skill-tag">[Dark Humor]</span>
+                    <span class="skill-tag">[Corporate Revenge]</span>
+                    <span class="skill-tag">[Simulation Reality]</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Books Section -->
+    <section id="books" class="books">
+        <div class="container">
+            <div class="terminal-header">
+                <span class="terminal-prompt">$</span> ls -la /books/
+            </div>
+            <h2 class="section-title">The <span class="text-glow">Code</span> Chronicles</h2>
+            <p class="section-subtitle">// Where reality meets recursion</p>
+
+            <div class="books-grid">
+                <!-- Book 1 - Main Novel -->
+                <div class="book-card featured">
+                    <div class="status-badge">Complete</div>
+                    <div class="book-cover">
+                        <div class="cover-placeholder">
+                            <div class="cover-code">
+                                <div>&lt;Awakened/&gt;</div>
+                                <div class="cover-glitch">LEVEL UP</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Awakened</h3>
+                        <p class="book-genre">SCI-FI / LITRPG LITE</p>
+                        <div class="book-stats">
+                            <span class="stat">📝 82,000 words</span>
+                            <span class="stat">📖 Status: Complete</span>
+                        </div>
+                        <p class="book-description">
+                            Samantha's having a rough holiday season. After getting fired and framed for corporate espionage,
+                            something in her brain snaps—and suddenly she can see reality's codebase. Complete with a voice announcing: LEVEL UP.
+                            Armed with a journal titled "DEFINITELY NOT EVIL PLANS," she does what any reasonable person would do:
+                            fix her coffee maker, give herself a raise, and methodically destroy everyone who wronged her.
+                        </p>
+                        <a href="https://www.royalroad.com/profile/451781" target="_blank" rel="noopener noreferrer" class="book-link">
+                            <span>Read on Royal Road</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book 2 - Awakened Series Book 2 -->
+                <div class="book-card">
+                    <div class="status-badge upcoming">Coming Soon</div>
+                    <div class="book-cover">
+                        <div class="cover-placeholder locked">
+                            <div class="cover-code">
+                                <div>🔒</div>
+                                <div class="cover-glitch">BOOK 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">Awakened: Book 2</h3>
+                        <p class="book-genre">SCI-FI / LITRPG LITE</p>
+                        <div class="book-stats">
+                            <span class="stat">📝 Status: Planned</span>
+                            <span class="stat">📖 Series: Awakened</span>
+                        </div>
+                        <p class="book-description">
+                            The sequel to Awakened. Samantha's mastery of reality's code grows, but so do the consequences.
+                            When she realizes she's not the only one who can see the system, the game changes entirely.
+                        </p>
+                        <a href="#" class="book-link">
+                            <span>Stay Updated</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Book 3 - The Last Technomancer -->
+                <div class="book-card">
+                    <div class="status-badge upcoming">In Progress</div>
+                    <div class="book-cover">
+                        <div class="cover-placeholder">
+                            <div class="cover-code">
+                                <div>&lt;/The Last&gt;</div>
+                                <div class="cover-glitch">TECHNOMANCER</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">The Last Technomancer</h3>
+                        <p class="book-genre">SCI-FI / LitRPG</p>
+                        <div class="book-stats">
+                            <span class="stat">📖 Royal Road</span>
+                            <span class="stat"> Status: Haitus</span>
+                        </div>
+                        <p class="book-description">
+                           The Last Technomancer is a LitRPG novel set in a world where technology and magic intersect. The story centers around Maura, who becomes the newest—and possibly last—being to receive the class of Technomancer, a rare ability to manipulate both magic and advanced technology. Trapped in a deadly tutorial meant to reintroduce humanity to a transformed Earth, Maura quickly realizes that her survival hinges not only on mastering her powers but also on rallying a group of strangers struggling to adapt to the new reality.
+                        </p>
+                        <a href="https://www.royalroad.com/fiction/95208/the-last-technomancer" target="_blank" rel="noopener noreferrer" class="book-link">
+                            <span>Read on Royal Road</span>
+                            <span class="arrow">→</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="terminal-header">
+                <span class="terminal-prompt">$</span> nano contact.msg
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2 class="section-title">Initialize <span class="text-glow">Connection</span></h2>
+                    <p class="contact-description">
+                        Found a bug in reality? Want to discuss the code? Have feedback on the story?
+                        Send a message through the system. I read every transmission.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 8L10.89 13.26C11.2187 13.4793 11.6049 13.5963 12 13.5963C12.3951 13.5963 12.7813 13.4793 13.11 13.26L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span>your.email@example.com</span>
+                        </div>
+                        <div class="response-time">
+                            <span class="status-dot"></span>
+                            <span>Response time: ~24 hours</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">string name;</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">string email;</label>
+                        <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">string message;</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <span class="btn-icon">▶</span> Execute Send()
+                    </button>
+                    <div class="form-status" id="formStatus"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3 class="footer-brand">
+                        <span class="logo-bracket">&lt;</span>Mandi May<span class="logo-bracket">/&gt;</span>
+                    </h3>
+                    <p class="footer-tagline">// Decoding reality, one chapter at a time</p>
+                    <div class="footer-status">
+                        <span class="status-dot pulsing"></span>
+                        <span>Currently writing...</span>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Support.execute()</h4>
+                    <ul>
+                        <li><a href="#" class="patreon-link">
+                            <span class="link-icon">♥</span> Join me on Patreon
+                        </a></li>
+                        <li><a href="https://www.redbubble.com/people/AmandaMayDoodle/shop" target="_blank" rel="noopener noreferrer" class="merch-link">
+                            <span class="link-icon">🛒</span> Shop Merchandise
+                        </a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Social.connect()</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/booksbymandimay/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.tiktok.com/@booksbymandimay" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=61586156548151" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.pinterest.com/booksbymandimay/" target="_blank" rel="noopener noreferrer" aria-label="Pinterest" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0a12 12 0 0 0-4.37 23.17c-.1-.93-.2-2.37.04-3.4.2-.9 1.33-5.64 1.33-5.64s-.34-.68-.34-1.68c0-1.57.91-2.74 2.05-2.74.97 0 1.43.72 1.43 1.59 0 .97-.62 2.42-.94 3.76-.27 1.13.57 2.05 1.68 2.05 2.01 0 3.56-2.12 3.56-5.17 0-2.7-1.94-4.59-4.71-4.59-3.21 0-5.1 2.41-5.1 4.9 0 .97.37 2.01.84 2.58.09.11.1.21.08.32-.09.38-.29 1.17-.33 1.33-.05.22-.17.27-.39.16-1.5-.7-2.43-2.89-2.43-4.65 0-3.56 2.58-6.82 7.44-6.82 3.91 0 6.95 2.79 6.95 6.51 0 3.89-2.45 7.01-5.85 7.01-1.14 0-2.22-.59-2.59-1.29l-.7 2.67c-.26.99-.95 2.23-1.42 2.99A12 12 0 1 0 12 0z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.reddit.com/user/BooksByMandiMay/" target="_blank" rel="noopener noreferrer" aria-label="Reddit" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.royalroad.com/profile/451781" target="_blank" rel="noopener noreferrer" aria-label="Royal Road" class="social-btn">
+                            <svg viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 3h18v18H3V3zm15 15V6H6v12h12zM8 8h8v2H8V8zm0 3h8v2H8v-2zm0 3h5v2H8v-2z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    <span class="terminal-prompt">$</span> echo "&copy; 2026 Mandi May. All rights reserved."
+                </p>
+                <p class="footer-credits">
+                    Built with <span class="text-glow">&lt;code/&gt;</span> and imagination
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
