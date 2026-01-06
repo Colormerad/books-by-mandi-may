@@ -154,6 +154,39 @@ html {
     background: rgba(0, 234, 100, 0.1);
 }
 
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background: var(--primary-green);
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
 /* Hero Section */
 .hero {
     position: relative;
@@ -972,6 +1005,44 @@ html {
 
 /* Responsive Design */
 @media (max-width: 968px) {
+    /* Mobile Navigation */
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        height: 100vh;
+        width: 280px;
+        background: rgba(10, 10, 10, 0.98);
+        backdrop-filter: blur(10px);
+        flex-direction: column;
+        padding: 100px 2rem 2rem;
+        gap: 0;
+        border-left: 1px solid var(--border-gray);
+        transition: right 0.3s ease;
+        box-shadow: -5px 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu li {
+        width: 100%;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 1rem;
+        font-size: 1rem;
+        border-bottom: 1px solid var(--border-gray);
+    }
+
+    /* Hero Section */
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -990,6 +1061,15 @@ html {
         justify-content: center;
     }
 
+    .code-window {
+        font-size: 0.85rem;
+    }
+
+    .code-content {
+        padding: 1.5rem 1rem;
+    }
+
+    /* Other Sections */
     .contact-wrapper {
         grid-template-columns: 1fr;
     }
@@ -1020,20 +1100,15 @@ html {
 
 @media (max-width: 640px) {
     .hero-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 1.75rem;
     }
 
     .nav-menu {
-        gap: var(--spacing-xs);
-    }
-
-    .nav-menu a {
-        padding: 0.5rem;
-        font-size: 0.8rem;
+        width: 100%;
     }
 
     .books-grid {
@@ -1056,6 +1131,26 @@ html {
 
     .stat-value {
         font-size: 1.5rem;
+    }
+
+    .code-window {
+        font-size: 0.75rem;
+    }
+
+    .window-title {
+        font-size: 0.75rem;
+    }
+
+    .code-content {
+        padding: 1rem 0.75rem;
+    }
+
+    .about-photo {
+        max-width: 100%;
+    }
+
+    .hero-visual {
+        margin-top: var(--spacing-md);
     }
 }
 
