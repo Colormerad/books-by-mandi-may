@@ -252,36 +252,24 @@ if (contactForm) {
             return;
         }
 
-        // Disable submit button
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalText = submitBtn.innerHTML;
-        submitBtn.disabled = true;
-        submitBtn.innerHTML = '<span class="btn-icon">⏳</span> Sending...';
+        // Construct mailto link with form data
+        const subject = encodeURIComponent(`Message from ${formData.name}`);
+        const body = encodeURIComponent(
+            `Name: ${formData.name}\n` +
+            `Email: ${formData.email}\n\n` +
+            `Message:\n${formData.message}`
+        );
 
-        // Simulate form submission
-        // TODO: Replace with actual backend integration
-        // Options: Formspree, Netlify Forms, EmailJS, or custom backend
+        const mailtoLink = `mailto:mandi@mandimay.org?subject=${subject}&body=${body}`;
 
-        try {
-            // Example integration (uncomment when ready):
-            // const response = await fetch('YOUR_FORM_ENDPOINT', {
-            //     method: 'POST',
-            //     headers: { 'Content-Type': 'application/json' },
-            //     body: JSON.stringify(formData)
-            // });
+        // Open default mail app
+        window.location.href = mailtoLink;
 
-            // Simulate API call
-            await new Promise(resolve => setTimeout(resolve, 1500));
-
-            showFormStatus('// Success: Message transmitted successfully!', 'success');
+        // Show success message and reset form
+        showFormStatus('// Success: Opening mail client...', 'success');
+        setTimeout(() => {
             contactForm.reset();
-
-        } catch (error) {
-            showFormStatus('// Error: Transmission failed. Please try again.', 'error');
-        } finally {
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = originalText;
-        }
+        }, 1000);
     });
 }
 
