@@ -657,6 +657,13 @@ html {
     z-index: 2;
 }
 
+.cover-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
 .cover-code {
     text-align: center;
 }
@@ -748,6 +755,70 @@ html {
 
 .book-link:hover .arrow {
     transform: translateX(4px);
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: var(--spacing-xl) 0;
+    background: var(--bg-black);
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.testimonial-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-gray);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    border-color: var(--primary-green);
+    box-shadow: var(--glow-green);
+    transform: translateY(-2px);
+}
+
+.testimonial-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--spacing-sm);
+}
+
+.code-comment {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--code-comment);
+    font-style: italic;
+}
+
+.rating {
+    font-size: 0.875rem;
+    color: var(--primary-green);
+}
+
+.testimonial-text {
+    color: var(--text-gray-light);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-md);
+    font-style: italic;
+}
+
+.testimonial-author {
+    font-family: var(--font-mono);
+    font-size: 0.875rem;
+    color: var(--primary-green);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 /* Contact Section */
