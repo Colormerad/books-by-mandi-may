@@ -68,6 +68,15 @@ body {
 }
 
 html {
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
     scroll-behavior: smooth;
 }
 
@@ -393,6 +402,12 @@ html {
     font-family: var(--font-mono);
     font-size: 0.9rem;
     line-height: 1.6;
+    white-space: pre;
+    overflow-x: auto;
+}
+
+.code-content code {
+    white-space: pre;
 }
 
 .code-keyword { color: var(--code-keyword); }
@@ -575,7 +590,7 @@ html {
 
 .books-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -767,7 +782,7 @@ html {
 
 .testimonials-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
     gap: var(--spacing-md);
     margin-top: var(--spacing-lg);
 }
@@ -1167,6 +1182,21 @@ html {
         max-width: 400px;
         margin: 0 auto;
     }
+
+    /* Testimonials */
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Books Section */
+    .books-grid {
+        gap: var(--spacing-md);
+    }
+
+    .book-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
 }
 
 @media (max-width: 640px) {
@@ -1222,6 +1252,52 @@ html {
 
     .hero-visual {
         margin-top: var(--spacing-md);
+    }
+
+    /* Container padding for smaller screens */
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+
+    /* Section spacing */
+    section {
+        padding: var(--spacing-lg) 0;
+    }
+
+    /* Testimonials */
+    .testimonial-card {
+        padding: var(--spacing-sm);
+    }
+
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+
+    /* Book stats wrapping */
+    .book-stats {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .stat {
+        display: block;
+        text-align: center;
+    }
+
+    /* Terminal headers */
+    .terminal-header {
+        font-size: 0.8rem;
+        overflow-x: auto;
+    }
+
+    /* Footer */
+    .footer-content {
+        gap: var(--spacing-md);
+    }
+
+    .footer-links ul,
+    .social-links {
+        gap: var(--spacing-xs);
     }
 }
 

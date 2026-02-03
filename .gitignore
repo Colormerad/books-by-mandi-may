@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+temp_frames/
+
+# Package manager files
+package-lock.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Local scripts (optional - keep if you want to commit them)
+export-*.js
